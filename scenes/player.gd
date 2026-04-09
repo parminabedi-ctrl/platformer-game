@@ -1,16 +1,28 @@
+
+
+
 extends CharacterBody2D
 
-var speed = 100.0
-	# choose a speed - i'm lowk checking if you're reading the code here,
-	# you should change this value so your player moves faster!!
 
-var direction = Vector2.ZERO
-	# at the start the player doesn't have a direction!!
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
 
 func _physics_process(delta: float) -> void:
-	direction = Input.get_vector("left", "right", "up", "down")
-	# get the vector (direction for x + y axes combined - you might have done this in maths in school)
-	
-	velocity = direction * speed
-	# velocity is direction combined with speed (you probably did this in physics)
-	
+	# Add the gravity.
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+
+	# Handle jump.
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction := Input.get_axis("ui_left", "ui_right")
+	if direction:
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	move_and_slide()
