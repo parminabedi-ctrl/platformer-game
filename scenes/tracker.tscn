@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d271qo0jo1nlp"]
+
+[ext_resource type="Texture2D" uid="uid://dml0krjgyspx" path="res://assets/burrito_sprite.png" id="1_bfym8"]
+
+[node name="Label" type="Label" unique_id=1808373549]
+offset_left = 1.0
+offset_right = 36.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 90
+text = "0"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=554629911]
+layout_mode = 0
+offset_left = 11.0
+offset_top = -12.0
+offset_right = 56.0
+offset_bottom = 31.0
+
+[node name="BurritoSprite" type="Sprite2D" parent="." unique_id=636877957]
+position = Vector2(-86.50001, 44.999992)
+scale = Vector2(0.4754464, 0.38392854)
+texture = ExtResource("1_bfym8")
