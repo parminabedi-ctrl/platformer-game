@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://keiic48wgj6"]
+
+[ext_resource type="Texture2D" uid="uid://dml0krjgyspx" path="res://assets/burrito_sprite.png" id="1_fp244"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qorn4"]
+size = Vector2(252, 273)
+
+[node name="burrito" type="Area2D" unique_id=213585590]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1885534849]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=487371220]
+position = Vector2(278, 67.5)
+shape = SubResource("RectangleShape2D_qorn4")
+
+[node name="BurritoSprite" type="Sprite2D" parent="." unique_id=303820202]
+position = Vector2(278, 8)
+texture = ExtResource("1_fp244")

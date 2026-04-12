@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://cyopnk6jfpoa3" path="res://assets/pixil-frame-0 (5).png" id="1_ta4h7"]
 [ext_resource type="PackedScene" uid="uid://nq08bsoe8dk1" path="res://scenes/player.tscn" id="2_ka884"]
 [ext_resource type="PackedScene" uid="uid://d271qo0jo1nlp" path="res://scenes/tracker.tscn" id="3_cn2eb"]
-[ext_resource type="Script" uid="uid://bgfc4kgv4w40c" path="res://scenes/tracker.gd" id="4_sj5te"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y23cg"]
 size = Vector2(65, 65.5)
@@ -431,8 +430,7 @@ position = Vector2(150, 13)
 zoom = Vector2(0.38, 0.38)
 
 [node name="Label" parent="CharacterBody2D2" unique_id=1808373549 instance=ExtResource("3_cn2eb")]
-offset_left = 147.0
-offset_top = -203.0
-offset_right = 198.0
-offset_bottom = -79.0
-script = ExtResource("4_sj5te")
+offset_left = -1123.0
+offset_top = 1294.0
+offset_right = -1072.0
+offset_bottom = 1418.0

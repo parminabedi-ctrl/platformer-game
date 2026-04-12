@@ -9,11 +9,9 @@ const scorescene = preload("res://scenes/tracker.tscn")
 
 	# also preload the images you want to use as icons here:
 const icon1 = preload("res://assets/burrito_sprite.png")	# just usin the default godot icon here :sob:
-					
+	
 var scores = [
-		["coins", "5", icon1, Vector2(0, 100)],
-		["bushes", "0", icon1, Vector2(0, 150)],
-		["wood", "20", icon1, Vector2(0, 200)]
+		["Burrito", "0", icon1, Vector2(150, -200)],
 	]
 		# ok so this is where we put all the scores we want to track, along with the score we want them
 		# to start at, the image we want them to have, and the coordinates we want to put them at.

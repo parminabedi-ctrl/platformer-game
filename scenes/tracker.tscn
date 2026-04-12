@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d271qo0jo1nlp"]
 
 [ext_resource type="Texture2D" uid="uid://dml0krjgyspx" path="res://assets/burrito_sprite.png" id="1_bfym8"]
+[ext_resource type="Script" uid="uid://bgfc4kgv4w40c" path="res://scenes/tracker.gd" id="1_g10r1"]
 
 [node name="Label" type="Label" unique_id=1808373549]
 offset_left = 1.0
@@ -8,6 +9,7 @@ offset_right = 36.0
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 90
 text = "0"
+script = ExtResource("1_g10r1")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=554629911]
 layout_mode = 0
