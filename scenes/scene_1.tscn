@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://btojlyjnhu0n3"]
 
+[ext_resource type="Script" uid="uid://cfj4lii55n1ch" path="res://scenes/scene_1.gd" id="1_sj5te"]
 [ext_resource type="Texture2D" uid="uid://cyopnk6jfpoa3" path="res://assets/pixil-frame-0 (5).png" id="1_ta4h7"]
 [ext_resource type="PackedScene" uid="uid://nq08bsoe8dk1" path="res://scenes/player.tscn" id="2_ka884"]
 [ext_resource type="PackedScene" uid="uid://d271qo0jo1nlp" path="res://scenes/tracker.tscn" id="3_cn2eb"]
@@ -406,6 +407,7 @@ physics_layer_0/collision_layer = 1
 sources/5 = SubResource("TileSetAtlasSource_ka884")
 
 [node name="Scene1" type="Node2D" unique_id=1026690068]
+script = ExtResource("1_sj5te")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1380510793]
 

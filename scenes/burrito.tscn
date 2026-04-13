@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://keiic48wgj6"]
 
 [ext_resource type="Texture2D" uid="uid://dml0krjgyspx" path="res://assets/burrito_sprite.png" id="1_fp244"]
+[ext_resource type="Script" uid="uid://bsqkkbntmvqy4" path="res://scenes/burrito.gd" id="1_qorn4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qorn4"]
 size = Vector2(252, 273)
 
 [node name="burrito" type="Area2D" unique_id=213585590]
+script = ExtResource("1_qorn4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1885534849]
 
