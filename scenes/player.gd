@@ -53,5 +53,9 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = 0
-
 	move_and_slide()
+func increase_score(label_counting):
+	for label in score_labels:
+		if label.whatitscounting == label_counting:
+			label.val += 1
+			label.text = str(label.val)
